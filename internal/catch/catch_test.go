@@ -7,7 +7,7 @@ import (
 	"syscall/js"
 	"testing"
 
-	"github.com/hack-pad/safejs/internal/assert"
+	"github.com:/skystebnicki/safejs-tinygo/internal/assert"
 )
 
 func TestTry(t *testing.T) {

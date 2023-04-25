@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"syscall/js"
 
-	"github.com/hack-pad/safejs/internal/stackerr"
+	"github.com:/skystebnicki/safejs-tinygo/internal/stackerr"
 )
 
 // Try runs fn and returns the result. If fn panicked, the panic value is returned as an error instead.
