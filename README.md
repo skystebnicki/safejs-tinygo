@@ -1,4 +1,4 @@
-# SafeJS  [![Go Reference](https://pkg.go.dev/badge/github.com/hack-pad/safejs.svg)](https://pkg.go.dev/github.com/hack-pad/safejs) [![CI](https://github.com/hack-pad/safejs/actions/workflows/ci.yml/badge.svg)](https://github.com/hack-pad/safejs/actions/workflows/ci.yml) [![Coverage Status](https://coveralls.io/repos/github/hack-pad/safejs/badge.svg?branch=main)](https://coveralls.io/github/hack-pad/safejs?branch=main)
+# SafeJS [![Go Reference](https://pkg.go.dev/badge/github.com:/skystebnicki/safejs-tinygo.svg)](https://pkg.go.dev/github.com:/skystebnicki/safejs-tinygo) [![CI](https://github.com:/skystebnicki/safejs-tinygo/actions/workflows/ci.yml/badge.svg)](https://github.com:/skystebnicki/safejs-tinygo/actions/workflows/ci.yml) [![Coverage Status](https://coveralls.io/repos/github/hack-pad/safejs/badge.svg?branch=main)](https://coveralls.io/github/hack-pad/safejs?branch=main)
 
 A safer, drop-in replacement for Go's `syscall/js` JavaScript package.
 
@@ -20,16 +20,21 @@ In an effort to align with the Go standard library API, some breaking changes ma
 ## Quick start
 
 1. Get `safejs`:
+
 ```
-go get github.com/hack-pad/safejs
+go get github.com:/skystebnicki/safejs-tinygo
 ```
+
 2. Import `safejs`:
+
 ```go
-import "github.com/hack-pad/safejs"
+import "github.com:/skystebnicki/safejs-tinygo"
 ```
-3. Replace uses of `syscall/js` with the `safejs` alternative. 
+
+3. Replace uses of `syscall/js` with the `safejs` alternative.
 
 Before:
+
 ```go
 //go:build js && wasm
 
@@ -48,12 +53,13 @@ func InsertButton(container js.Value) js.Value {
 ```
 
 After:
+
 ```go
 //go:build js && wasm
 
 package buttons
 
-import "github.com/hack-pad/safejs"
+import "github.com:/skystebnicki/safejs-tinygo"
 
 // InsertButton creates a new button, adds it to 'container', and returns the button or the first error.
 func InsertButton(container safejs.Value) (safejs.Value, error) {
@@ -81,11 +87,11 @@ For additional JavaScript safety, use the `jsguard` linter too.
 
 ```bash
 # When installed without specifying a version, uses the go.mod version.
-go install github.com/hack-pad/safejs/jsguard/cmd/jsguard
+go install github.com:/skystebnicki/safejs-tinygo/jsguard/cmd/jsguard
 export GOOS=js GOARCH=wasm
 jsguard ./...
 ```
 
-It *does not* report use of types like `js.Value` -- only function calls on those types.
+It _does not_ report use of types like `js.Value` -- only function calls on those types.
 
 This makes it easy to integrate SafeJS into existing libraries which expose only standard library types.

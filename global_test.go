@@ -5,8 +5,8 @@ package safejs
 import (
 	"testing"
 
-	"github.com/hack-pad/safejs/internal/assert"
-	"github.com/hack-pad/safejs/internal/catch"
+	"github.com:/skystebnicki/safejs-tinygo/internal/assert"
+	"github.com:/skystebnicki/safejs-tinygo/internal/catch"
 )
 
 func TestGlobal(t *testing.T) {

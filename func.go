@@ -5,7 +5,7 @@ package safejs
 import (
 	"syscall/js"
 
-	"github.com/hack-pad/safejs/internal/catch"
+	"github.com:/skystebnicki/safejs-tinygo/internal/catch"
 )
 
 // Func is a wrapped Go function to be called by JavaScript.

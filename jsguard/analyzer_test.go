@@ -10,7 +10,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hack-pad/safejs/internal/assert"
+	"github.com:/skystebnicki/safejs-tinygo/internal/assert"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/analysistest"
 )

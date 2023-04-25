@@ -1,4 +1,4 @@
-module github.com/hack-pad/safejs
+module github.com:/skystebnicki/safejs-tinygo
 
 go 1.18
 
