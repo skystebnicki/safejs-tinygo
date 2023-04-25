@@ -70,8 +70,8 @@ func (s *stacktrace) String() string {
 	frames := runtime.CallersFrames(s.callers)
 	for frame, next := frames.Next(); next; frame, next = frames.Next() {
 		funcName := "unknown"
-		if frame.Func != nil {
-			funcName = frame.Func.Name()
+		if frame.Function != "" {
+			funcName = frame.Function
 		}
 		sb.WriteString(fmt.Sprintf("%s\n\t%s:%d\n", funcName, frame.File, frame.Line))
 	}
