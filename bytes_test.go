@@ -5,7 +5,7 @@ package safejs
 import (
 	"testing"
 
-	"github.com:/skystebnicki/safejs-tinygo/internal/assert"
+	"github.com/hack-pad/safejs/internal/assert"
 )
 
 func TestCopyBytesError(t *testing.T) {

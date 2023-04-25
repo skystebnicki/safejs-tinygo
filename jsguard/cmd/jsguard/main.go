@@ -4,7 +4,7 @@
 package main
 
 import (
-	"github.com:/skystebnicki/safejs-tinygo/jsguard"
+	"github.com/hack-pad/safejs/jsguard"
 	"golang.org/x/tools/go/analysis/singlechecker"
 )
 

@@ -5,7 +5,7 @@ package safejs
 import (
 	"syscall/js"
 
-	"github.com:/skystebnicki/safejs-tinygo/internal/catch"
+	"github.com/hack-pad/safejs/internal/catch"
 )
 
 // Error wraps a JavaScript error.

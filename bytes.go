@@ -5,7 +5,7 @@ package safejs
 import (
 	"syscall/js"
 
-	"github.com:/skystebnicki/safejs-tinygo/internal/catch"
+	"github.com/hack-pad/safejs/internal/catch"
 )
 
 // CopyBytesToGo copies bytes from src to dst.

@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"syscall/js"
 
-	"github.com:/skystebnicki/safejs-tinygo/internal/catch"
+	"github.com/hack-pad/safejs/internal/catch"
 )
 
 // Value is a safer version of js.Value. Any panic returns an error instead.
